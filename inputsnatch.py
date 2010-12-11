@@ -56,9 +56,7 @@ if __name__ == '__main__':
     options, args = option_parser.parse_args()
 
     # set the template we are going to use form our names
-    section_name_template = options.section_template or 'form_%(url)s_%(action)s'
-
-    print "url:",args
+    section_name_template= options.section_template or 'form_%(url)s_%(action)s'
 
     # grab an input snatcher, scrape the form
     snatcher = InputSnatcher(args[0])
